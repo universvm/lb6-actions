@@ -5,6 +5,8 @@ on run
 		set browserName to "Google Chrome"
 	else if is_running("Chromium") then
 		set browserName to "Chromium"
+	else if is_running("Vivaldi") then
+		set browserName to "Vivaldi"
 	else
 		return
 	end if
@@ -61,6 +63,8 @@ on switch_tab(argv)
 		set browserName to "Google Chrome"
 	else if is_running("Chromium") then
 		set browserName to "Chromium"
+	else if is_running("Vivaldi") then	
+		set browserName to "Vivaldi"
 	else
 		return
 	end if
